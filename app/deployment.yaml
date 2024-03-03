@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hodor
   name: hodor
-  namespace: fampay
+  namespace: testing
 spec:
   replicas: 1
   selector:
@@ -42,7 +42,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hodor-hpa-service
-  namespace: fampay
+  namespace: testing
   labels:
     app: hodor
 spec:
